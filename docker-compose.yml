@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  my_nginx:
+    build: .
+    ports:
+      - '8080:8080'
+      - '8081:8081'
+    volumes:
+      - ./drive:/tmp/drive
+      - ./root:/tmp/root
